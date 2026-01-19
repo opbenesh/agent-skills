@@ -73,11 +73,12 @@ This skill automates the setup of a new repository by ensuring it has a README, 
             run: python -m pytest
     ```
 
-### 5. Environment Setup (venv)
-- Check if a `venv` or `.venv` directory exists.
+### 6. Environment Variables (.env)
+- Check if `.env` exists.
 - If missing:
-    - Create a virtual environment using `python3 -m venv venv`.
-    - If `requirements.txt` exists, install dependencies using `venv/bin/pip install -r requirements.txt`.
+    - If `.env.example` exists, copy it to `.env`.
+    - Otherwise, create a template `.env` based on known project requirements.
+    - Notify the user to fill in the required secrets.
 
 ## Guidelines
 - Always confirm before overwriting any existing files.

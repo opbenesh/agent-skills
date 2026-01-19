@@ -17,6 +17,9 @@ Use this skill to perform maintenance and hygiene checks on an existing reposito
     - Identify files like `CONTRIBUTING.md`, `ARCHITECTURE.md`, `CHANGELOG.md`, etc., in the root.
     - Audit their content for accuracy.
     - If a file seems redundant or unnecessary for a project of this scale, notify the user.
+- **Environment Templates**:
+    - Ensure `.env.example` exists and is in sync with the required keys in the codebase.
+    - Verify that `.env` is listed in `.gitignore`.
 
 ### 2. Dependency Check
 - **Requirements**:
